@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.PRODUCTION_USERNAME }}
           password: ${{ secrets.PRODUCTION_PASSWORD }}
           script: |
-            cd /var/www/apptest
+            cd /var/www/apptest/react-vite-digital-ocean-ci-cd
             git pull origin master
             npm install && npm run build
             pm2 reload all
